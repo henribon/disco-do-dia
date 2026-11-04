@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T18:16:18.077Z",
-  "total": 69,
+  "generated_at": "2026-11-04T18:36:40.522Z",
+  "total": 66,
   "discos": [
     {
       "nome": "Di Melo",
@@ -111,6 +111,18 @@
       "adicionado_em": "2025-11-04T13:04:00.000Z"
     },
     {
+      "nome": "Seducao",
+      "artista": "Altay Veloso",
+      "nota": 9,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4Ycg6HcuPVepBkgnNB6kmB",
+      "spotify_id": "4Ycg6HcuPVepBkgnNB6kmB",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d0e106350cc64aef50ab1aae",
+      "adicionado_em": "2025-10-22T14:48:00.000Z"
+    },
+    {
       "nome": "As Musicas de Lupercio Guerra",
       "artista": "Marissa Rossi",
       "nota": 9,
@@ -131,6 +143,18 @@
       "spotify_id": "0IorUdxKqanPxpAzzavG5n",
       "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0250e1ee6348e94bff11e4bf40",
       "adicionado_em": "2025-12-10T13:08:00.000Z"
+    },
+    {
+      "nome": "Mais que um Adeus",
+      "artista": "Emilio Santiago",
+      "nota": 8,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/3ZiJqSVnlkiWIHcAJy4yvq",
+      "spotify_id": "3ZiJqSVnlkiWIHcAJy4yvq",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0239cf7b7d922ddf5537aec209",
+      "adicionado_em": "2025-10-09T13:30:00.000Z"
     },
     {
       "nome": "Toboga",
@@ -167,6 +191,18 @@
       "spotify_id": "1RF1bfPvdoLs20NpmmqKI3",
       "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f62b04957124e35da5753f5d",
       "adicionado_em": "2025-12-05T14:32:00.000Z"
+    },
+    {
+      "nome": "Origens",
+      "artista": "FIlo Machado",
+      "nota": 7,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/5hMcqjEYG4kJX3oYL1nxKr",
+      "spotify_id": "5hMcqjEYG4kJX3oYL1nxKr",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029933f00eb1af1bcae90c0ebe",
+      "adicionado_em": "2025-10-09T13:17:00.000Z"
     },
     {
       "nome": "Nos",
@@ -359,31 +395,6 @@
       "adicionado_em": "2026-04-17T14:48:00.000Z"
     },
     {
-      "nome": "Origens",
-      "artista": "Filó Machado",
-      "nota": null,
-      "generos": [
-        "MPB",
-        "Soul"
-      ],
-      "url": "https://open.spotify.com/album/5hMcqjEYG4kJX3oYL1nxKr",
-      "spotify_id": "5hMcqjEYG4kJX3oYL1nxKr",
-      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029933f00eb1af1bcae90c0ebe",
-      "adicionado_em": "2026-04-17T14:48:00.000Z"
-    },
-    {
-      "nome": "Carlos Gonzaga",
-      "artista": "Carlos Gonzaga",
-      "nota": null,
-      "generos": [
-        "Jovem Guarda"
-      ],
-      "url": "https://open.spotify.com/album/5ZRcz9JwebwvI625Y9Dj1c",
-      "spotify_id": "5ZRcz9JwebwvI625Y9Dj1c",
-      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02612c04af32bee5a500a312c9",
-      "adicionado_em": "2026-04-17T14:48:00.000Z"
-    },
-    {
       "nome": "Bebeto",
       "artista": "Bebeto",
       "nota": null,
@@ -394,19 +405,6 @@
       "url": "https://open.spotify.com/album/1DgJ0Gh3lMyXVfpCxqQ6DR",
       "spotify_id": "1DgJ0Gh3lMyXVfpCxqQ6DR",
       "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b8dae0720ceda4c2f62f804a",
-      "adicionado_em": "2026-04-17T14:48:00.000Z"
-    },
-    {
-      "nome": "Sandra de Sá - 1984",
-      "artista": "Sandra De Sá",
-      "nota": null,
-      "generos": [
-        "Soul",
-        "MPB"
-      ],
-      "url": "https://open.spotify.com/album/5HELnaruoCJbfCVnYiEVB1",
-      "spotify_id": "5HELnaruoCJbfCVnYiEVB1",
-      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022ca81720326db07a18dbd667",
       "adicionado_em": "2026-04-17T14:48:00.000Z"
     },
     {
@@ -431,19 +429,6 @@
       "url": "https://open.spotify.com/album/221cRlERrYynaEGITG5LhE",
       "spotify_id": "221cRlERrYynaEGITG5LhE",
       "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ab1c51261aeb957acabe88c9",
-      "adicionado_em": "2026-04-17T14:48:00.000Z"
-    },
-    {
-      "nome": "Os Tincoãs",
-      "artista": "Os Tincoãs",
-      "nota": null,
-      "generos": [
-        "MPB",
-        "Samba"
-      ],
-      "url": "https://open.spotify.com/album/66E3E9DaAxpGPE4SgrOBDX",
-      "spotify_id": "66E3E9DaAxpGPE4SgrOBDX",
-      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02099dde456cd1d70b5c47a66e",
       "adicionado_em": "2026-04-17T14:48:00.000Z"
     },
     {
@@ -585,18 +570,6 @@
       "adicionado_em": "2025-12-04T13:57:00.000Z"
     },
     {
-      "nome": "Seducao",
-      "artista": "Altay Veloso",
-      "nota": null,
-      "generos": [
-        "Disco"
-      ],
-      "url": "https://open.spotify.com/intl-pt/album/4Ycg6HcuPVepBkgnNB6kmB",
-      "spotify_id": "4Ycg6HcuPVepBkgnNB6kmB",
-      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d0e106350cc64aef50ab1aae",
-      "adicionado_em": "2025-10-22T14:48:00.000Z"
-    },
-    {
       "nome": "Colo de Rio",
       "artista": "Marcia Maria",
       "nota": null,
@@ -630,18 +603,6 @@
       "spotify_id": "72O5JvUfLI71iSMqaOdNAY",
       "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02fab75b16fe482ed5a0f5110b",
       "adicionado_em": "2025-10-20T13:27:00.000Z"
-    },
-    {
-      "nome": "Mais que um Adeus",
-      "artista": "Emilio Santiago",
-      "nota": null,
-      "generos": [
-        "Disco"
-      ],
-      "url": "https://open.spotify.com/intl-pt/album/3ZiJqSVnlkiWIHcAJy4yvq",
-      "spotify_id": "3ZiJqSVnlkiWIHcAJy4yvq",
-      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0239cf7b7d922ddf5537aec209",
-      "adicionado_em": "2025-10-09T13:30:00.000Z"
     },
     {
       "nome": "O som do Copa 7",
