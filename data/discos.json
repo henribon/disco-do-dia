@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T18:45:16.832Z",
+  "generated_at": "2026-11-04T18:48:57.067Z",
   "total": 69,
   "discos": [
     {
@@ -83,9 +83,9 @@
       "generos": [
         "Soul"
       ],
-      "url": null,
-      "spotify_id": null,
-      "capa": null,
+      "url": "https://open.spotify.com/intl-pt/album/3We243Gx3VD7ILsG8rk8IK",
+      "spotify_id": "3We243Gx3VD7ILsG8rk8IK",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a3def8770ef75d919f53dab1",
       "adicionado_em": "2025-09-29T13:46:00.000Z"
     },
     {
@@ -130,9 +130,9 @@
       "artista": "Gilberto Gil",
       "nota": 9,
       "generos": [],
-      "url": null,
-      "spotify_id": null,
-      "capa": null,
+      "url": "https://open.spotify.com/intl-pt/album/7It8fyjk6UpYeOgqR9C5CG",
+      "spotify_id": "7It8fyjk6UpYeOgqR9C5CG",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023762d8dd07be1fd1cb3cc752",
       "adicionado_em": "2025-11-04T13:04:00.000Z"
     },
     {
