@@ -108,6 +108,73 @@ h1 {
   color: var(--muted);
 }
 
+/* -------------------------------------------------------------- sobre --- */
+
+/* um link de verdade no meio da frase, nao um botao com cara de botao */
+.sobre {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-left: .35rem;
+  color: var(--muted);
+  font: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--dim);
+  text-underline-offset: .25em;
+  cursor: pointer;
+  transition: color .25s ease, text-decoration-color .25s ease;
+}
+
+.sobre:hover,
+.sobre:focus-visible { color: var(--fg); text-decoration-color: var(--muted); }
+
+.sobre-caixa {
+  width: min(34rem, calc(100vw - 2.5rem));
+  padding: clamp(1.4rem, 4vw, 2.25rem);
+  background: #121212;
+  border: 1px solid var(--line);
+  border-radius: .8rem;
+  color: var(--muted);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .7);
+}
+
+.sobre-caixa::backdrop { background: rgba(0, 0, 0, .72); }
+
+.sobre-caixa h2 {
+  margin: 0 0 1.1rem;
+  color: var(--fg);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.sobre-caixa p {
+  margin: 0 0 .9rem;
+  font-size: .9375rem;
+  line-height: 1.65;
+}
+
+.sobre-caixa p:last-of-type { margin-bottom: 1.6rem; }
+
+.sobre-fecha {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .36rem .9rem;
+  color: var(--muted);
+  font: inherit;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .25s ease, border-color .25s ease;
+}
+
+.sobre-fecha:hover,
+.sobre-fecha:focus-visible { outline: none; color: var(--fg); border-color: var(--muted); }
+
 /* ------------------------------------------------------------ filtros --- */
 
 /*
@@ -380,7 +447,40 @@ footer a:hover, footer a:focus-visible { color: var(--fg); }
   <a class="back" href="https://bonbap.com.br/">&larr; bonbap</a>
 
   <h1 class="reveal">Disco<br>do dia</h1>
-  <p class="sub reveal" style="--d:.1s" id="resumo">Carregando…</p>
+  <p class="sub reveal" style="--d:.1s">
+    <span id="resumo">Carregando…</span>
+    <button class="sobre" type="button" id="abre-sobre">sobre</button>
+  </p>
+
+  <dialog class="sobre-caixa" id="sobre" aria-labelledby="sobre-titulo">
+    <h2 id="sobre-titulo">Sobre</h2>
+
+    <p>
+      Isso começou no Twitter. Eu escutava um disco por dia e postava uma
+      resenha curta com uma nota no fim. Virou rotina, a lista foi crescendo,
+      e uma hora parou de caber em thread.
+    </p>
+
+    <p>
+      A maioria é música brasileira. Tem bastante coisa dos anos 70, muito
+      disco que apareceu garimpando, e de vez em quando um de fora que entrou
+      de carona.
+    </p>
+
+    <p>
+      A nota não tem método nem critério fechado. É o que eu senti ouvindo,
+      naquele dia. Às vezes mudo de ideia depois e corrijo.
+    </p>
+
+    <p>
+      Quem está na fila é disco que eu já separei mas ainda não escutei com
+      atenção suficiente pra dar nota.
+    </p>
+
+    <p>As resenhas seguem lá no Twitter, por enquanto.</p>
+
+    <button class="sobre-fecha" type="button" id="fecha-sobre">fechar</button>
+  </dialog>
 
   <div class="filtros reveal" style="--d:.18s" id="filtros">
     <button class="filtro-porta" id="filtro-porta" type="button"
@@ -409,6 +509,20 @@ footer a:hover, footer a:focus-visible { color: var(--fg); }
 
 <script type="module">
 const SRC = 'data/discos.json';
+
+/*
+ * A caixa do "sobre" e um <dialog>: o Esc, a armadilha de foco e a devolucao
+ * do foco pro link vem de graca do proprio elemento. So o clique no fundo e
+ * que precisa de ajuda, porque nesse caso o alvo do evento e o dialog em si.
+ *
+ * Fica fora do try que carrega os discos: se o JSON falhar, o texto do
+ * projeto continua abrindo.
+ */
+const sobre = document.getElementById('sobre');
+
+document.getElementById('abre-sobre').addEventListener('click', () => sobre.showModal());
+document.getElementById('fecha-sobre').addEventListener('click', () => sobre.close());
+sobre.addEventListener('click', (e) => { if (e.target === sobre) sobre.close(); });
 
 const resumo = document.getElementById('resumo');
 const filtros = document.getElementById('filtros');
