@@ -1,0 +1,9 @@
+{
+  "name": "disco-do-dia",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "update": "node scripts/update.mjs"
+  }
+}

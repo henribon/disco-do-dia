@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0a">
+<title>disco do dia — bonbap</title>
+<meta name="description" content="Um disco por dia, com nota e link pro Spotify. Os melhores primeiro.">
+<link rel="canonical" href="https://bonbap.com.br/disco-do-dia/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230a0a0a'/><circle cx='16' cy='16' r='9' fill='none' stroke='%23cfcfcf' stroke-width='2'/><circle cx='16' cy='16' r='2' fill='%23cfcfcf'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://image-cdn-ak.spotifycdn.com" crossorigin>
+<link rel="preconnect" href="https://i.scdn.co" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;700;800&display=swap">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="disco do dia — bonbap">
+<meta property="og:description" content="Um disco por dia, com nota e link pro Spotify. Os melhores primeiro.">
+<meta property="og:url" content="https://bonbap.com.br/disco-do-dia/">
+<meta property="og:locale" content="pt_BR">
+
+<style>
+/*
+ * Mesmos tokens da home do bonbap.com.br: escuro fixo, Inter Tight pelo
+ * Google Fonts, cinza claro na tipografia grande. Esta pagina e irma da
+ * /listening-spotify/ e filha do menu da home, entao segue o visual de la —
+ * inclusive o grao e a luz de fundo.
+ */
+:root {
+  color-scheme: dark;                 /* escuro sempre, sem seguir o sistema */
+  --bg: #0a0a0a;
+  --fg: #fafafa;
+  --solid: #cfcfcf;                   /* cinza claro da tipografia gigante */
+  --dim: #464646;                     /* o que recua quando outra coisa acende */
+  --muted: #8a8a8a;
+  --line: rgba(255, 255, 255, .09);
+  --pad: clamp(1.25rem, 4vw, 3rem);
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  color: var(--fg);
+  font: 500 16px/1.5 "Inter Tight", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ------------------------------------------------------ camadas de fundo */
+.layer { position: fixed; inset: 0; pointer-events: none; z-index: -1; }
+
+/* luz fria no alto — so profundidade, sem cor. Fixa, porque a pagina rola. */
+.layer--glow {
+  background: radial-gradient(42rem 42rem at 50% -8%, rgba(255, 255, 255, .06), transparent 62%);
+}
+
+.layer--grain {
+  opacity: .035;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/><feColorMatrix type='saturate' values='0'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");
+}
+
+.wrap { max-width: 56rem; margin: 0 auto; padding: clamp(1.5rem, 5vh, 3.5rem) var(--pad) 4rem; }
+
+/* ----------------------------------------------------------- cabecalho --- */
+
+.back {
+  display: inline-block;
+  margin-bottom: clamp(1.5rem, 5vh, 3rem);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: .8125rem;
+  letter-spacing: .02em;
+  transition: color .3s ease;
+}
+.back:hover, .back:focus-visible { color: var(--fg); }
+
+h1 {
+  margin: 0;
+  font-weight: 800;
+  color: var(--solid);
+  /* duas linhas curtas aguentam corpo maior que uma linha longa */
+  font-size: clamp(3rem, 16vw, 7.5rem);
+  line-height: .82;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+
+.sub {
+  margin: clamp(.75rem, 2vh, 1.25rem) 0 0;
+  font-size: .9375rem;
+  color: var(--muted);
+}
+
+/* ------------------------------------------------------------ filtros --- */
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: clamp(1.5rem, 4vh, 2.5rem) 0 0;
+}
+
+.chip {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .32rem .7rem;
+  color: var(--muted);
+  font: inherit;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .25s ease, border-color .25s ease, background-color .25s ease;
+}
+
+.chip:hover { color: var(--fg); border-color: var(--muted); }
+
+.chip[aria-pressed="true"] {
+  color: var(--bg);
+  background: var(--solid);
+  border-color: var(--solid);
+}
+
+/* -------------------------------------------------------------- lista --- */
+
+.lista { list-style: none; margin: clamp(1.5rem, 4vh, 2.5rem) 0 0; padding: 0; }
+
+.disco {
+  display: grid;
+  /* posicao | capa | texto | nota */
+  grid-template-columns: 1.75rem 3.5rem 1fr auto;
+  align-items: center;
+  gap: clamp(.6rem, 2vw, 1.1rem);
+  padding: .7rem 0;
+  border-top: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.lista .disco:last-child { border-bottom: 1px solid var(--line); }
+
+/* o disco em foco acende e os outros recuam — igual ao menu da home */
+.lista:hover .disco, .lista:focus-within .disco { color: var(--dim); }
+.lista .disco:hover, .lista .disco:focus-visible { color: var(--fg); }
+.disco:focus-visible { outline: none; }
+.disco:focus-visible .nome { text-decoration: underline; text-underline-offset: .3em; }
+
+.pos {
+  font-size: .8125rem;
+  font-weight: 700;
+  color: var(--dim);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  transition: color .3s ease;
+}
+.disco:hover .pos, .disco:focus-visible .pos { color: var(--muted); }
+
+.capa {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: .3rem;
+  object-fit: cover;
+  background: #1a1a1c;
+  border: 1px solid var(--line);
+  transition: transform .4s var(--ease);
+}
+.disco:hover .capa, .disco:focus-visible .capa { transform: scale(1.05); }
+
+/* sem capa (disco sem link no Notion) fica um quadrado vazio, nao um buraco */
+.capa--vazia { display: grid; place-items: center; color: var(--dim); font-size: 1.1rem; }
+
+.texto { min-width: 0; }   /* deixa o ellipsis funcionar dentro do grid */
+
+.nome {
+  display: block;
+  font-weight: 700;
+  font-size: clamp(.9375rem, 2.4vw, 1.0625rem);
+  letter-spacing: -.01em;
+  /* nome de disco e imprevisivel: uma linha so, pro ritmo nao quebrar */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta {
+  display: block;
+  margin-top: .1rem;
+  font-size: .8125rem;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nota {
+  font-weight: 800;
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+  line-height: 1;
+  letter-spacing: -.03em;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  transition: color .3s ease;
+}
+
+/* nota alta se destaca pelo peso do cinza, nao por cor: o site e monocromatico */
+.nota--alta { color: var(--solid); }
+.disco:hover .nota, .disco:focus-visible .nota { color: var(--fg); }
+
+/* ---------------------------------------------------------- sem nota --- */
+
+.pendentes { margin-top: clamp(2.5rem, 7vh, 4.5rem); }
+
+h2 {
+  margin: 0 0 .25rem;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pendentes .aviso { margin: 0 0 1rem; font-size: .8125rem; color: var(--dim); }
+
+/* sem nota nao tem ranking, entao nao tem posicao nem nota — so capa e nome */
+.pendentes .disco { grid-template-columns: 3.5rem 1fr auto; }
+
+.seta {
+  flex: none;
+  font-size: .8125rem;
+  color: var(--dim);
+  opacity: 0;
+  transition: opacity .3s ease, transform .4s var(--ease);
+}
+.disco:hover .seta, .disco:focus-visible .seta { opacity: 1; transform: translateY(-.15em); color: var(--muted); }
+
+/* --------------------------------------------------------------- misc --- */
+
+.vazio { margin: 2rem 0; color: var(--muted); font-size: .9375rem; }
+
+footer {
+  margin-top: clamp(2.5rem, 7vh, 4rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: .68rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+footer a { color: var(--muted); text-decoration: none; transition: color .3s ease; }
+footer a:hover, footer a:focus-visible { color: var(--fg); }
+
+/* no toque nao existe hover: nada recua, e a seta fica sempre visivel */
+@media (hover: none) {
+  .lista:hover .disco, .lista:focus-within .disco { color: var(--fg); }
+  .seta { opacity: .35; }
+}
+
+@media (max-width: 30rem) {
+  .disco { grid-template-columns: 1.25rem 3rem 1fr auto; }
+  .capa { width: 3rem; height: 3rem; }
+  .pendentes .disco { grid-template-columns: 3rem 1fr auto; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { animation: rise .9s var(--ease) backwards; animation-delay: var(--d, 0s); }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+}
+
+:focus-visible { outline: 2px solid var(--muted); outline-offset: 3px; }
+</style>
+</head>
+<body>
+
+<div class="layer layer--glow"></div>
+<div class="layer layer--grain"></div>
+
+<div class="wrap">
+
+  <a class="back" href="https://bonbap.com.br/">&larr; bonbap</a>
+
+  <h1 class="reveal">Disco<br>do dia</h1>
+  <p class="sub reveal" style="--d:.1s" id="resumo">Carregando…</p>
+
+  <div class="filtros reveal" style="--d:.18s" id="filtros" role="group" aria-label="Filtrar por gênero"></div>
+
+  <ol class="lista reveal" style="--d:.26s" id="lista"></ol>
+
+  <section class="pendentes" id="pendentes" hidden>
+    <h2>Escutados sem nota</h2>
+    <p class="aviso" id="aviso-pendentes"></p>
+    <ul class="lista" id="lista-pendentes"></ul>
+  </section>
+
+  <footer>
+    as notas são minhas &mdash; <a href="https://bonbap.com.br/listening-spotify/">ouvindo no spotify &#8599;</a>
+  </footer>
+
+</div>
+
+<script type="module">
+const SRC = 'data/discos.json';
+
+const resumo = document.getElementById('resumo');
+const filtros = document.getElementById('filtros');
+const lista = document.getElementById('lista');
+const pendentes = document.getElementById('pendentes');
+const listaPendentes = document.getElementById('lista-pendentes');
+const avisoPendentes = document.getElementById('aviso-pendentes');
+
+/** Nota a partir da qual o numero acende. Acima disso e recomendacao, nao registro. */
+const NOTA_ALTA = 9;
+
+/**
+ * Uma linha da lista. `posicao` null quer dizer disco sem nota: ele nao entra
+ * no ranking, entao sai sem numero e sem nota.
+ *
+ * Disco sem link no Notion nao pode virar <a> — fica <li> simples, pra nao
+ * oferecer um clique que nao leva a lugar nenhum.
+ */
+function linha(disco, posicao) {
+  const li = document.createElement('li');
+  const alvo = disco.url ? document.createElement('a') : document.createElement('div');
+  alvo.className = 'disco';
+
+  if (disco.url) {
+    alvo.href = disco.url;
+    alvo.target = '_blank';
+    alvo.rel = 'noopener';
+  }
+
+  if (posicao != null) {
+    const pos = document.createElement('span');
+    pos.className = 'pos';
+    pos.textContent = posicao;
+    alvo.append(pos);
+  }
+
+  if (disco.capa) {
+    const img = document.createElement('img');
+    img.className = 'capa';
+    img.src = disco.capa;
+    img.alt = `Capa de ${disco.nome}`;
+    img.width = 56;
+    img.height = 56;
+    img.loading = 'lazy';
+    img.decoding = 'async';
+    alvo.append(img);
+  } else {
+    const vazia = document.createElement('span');
+    vazia.className = 'capa capa--vazia';
+    vazia.setAttribute('aria-hidden', 'true');
+    vazia.textContent = '♪';
+    alvo.append(vazia);
+  }
+
+  const texto = document.createElement('span');
+  texto.className = 'texto';
+
+  const nome = document.createElement('span');
+  nome.className = 'nome';
+  nome.textContent = disco.nome;
+
+  const meta = document.createElement('span');
+  meta.className = 'meta';
+  meta.textContent = [disco.artista, disco.generos?.join(' · ')].filter(Boolean).join(' — ');
+
+  texto.append(nome, meta);
+  alvo.append(texto);
+
+  if (disco.nota != null) {
+    const nota = document.createElement('span');
+    nota.className = disco.nota >= NOTA_ALTA ? 'nota nota--alta' : 'nota';
+    // 9.5 com virgula, 9 sem ".0" — numero de nota, nao de planilha
+    nota.textContent = String(disco.nota).replace('.', ',');
+    alvo.append(nota);
+  } else {
+    const seta = document.createElement('span');
+    seta.className = 'seta';
+    seta.setAttribute('aria-hidden', 'true');
+    seta.textContent = '↗';
+    alvo.append(seta);
+  }
+
+  li.append(alvo);
+  return li;
+}
+
+try {
+  const r = await fetch(SRC, { cache: 'no-cache' });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  const data = await r.json();
+
+  const comNota = data.discos ?? [];
+  const semNota = data.sem_nota ?? [];
+
+  if (!comNota.length && !semNota.length) {
+    resumo.textContent = 'ainda sem discos — a coleta roda toda madrugada';
+    throw new Error('vazio');
+  }
+
+  /* Generos que realmente aparecem, na ordem em que sao mais usados. */
+  const contagem = new Map();
+  for (const d of [...comNota, ...semNota]) {
+    for (const g of d.generos ?? []) contagem.set(g, (contagem.get(g) ?? 0) + 1);
+  }
+  const generos = [...contagem.entries()].sort((a, b) => b[1] - a[1]).map(([g]) => g);
+
+  let ativo = null;   // null = todos
+
+  /**
+   * A posicao e do ranking inteiro, nao da lista filtrada: filtrar por JAZZ
+   * nao transforma o 12o melhor disco em 1o. Por isso o indice e calculado
+   * antes de filtrar.
+   */
+  function desenha() {
+    const ranking = comNota
+      .map((d, i) => [d, i + 1])
+      .filter(([d]) => !ativo || (d.generos ?? []).includes(ativo));
+
+    lista.replaceChildren(...ranking.map(([d, pos]) => linha(d, pos)));
+
+    const pend = semNota.filter((d) => !ativo || (d.generos ?? []).includes(ativo));
+    listaPendentes.replaceChildren(...pend.map((d) => linha(d, null)));
+    pendentes.hidden = !pend.length;
+    avisoPendentes.textContent = `${pend.length} na fila, esperando uma escuta com atenção.`;
+
+    if (!ranking.length) {
+      const p = document.createElement('li');
+      p.className = 'vazio';
+      p.textContent = `Nenhum disco de ${ativo} com nota ainda.`;
+      lista.append(p);
+    }
+
+    resumo.textContent = ativo
+      ? `${ranking.length} ${ranking.length === 1 ? 'disco' : 'discos'} de ${ativo} com nota.`
+      : `${comNota.length} discos com nota, ${semNota.length} na fila. Os melhores primeiro.`;
+
+    for (const chip of filtros.children) {
+      chip.setAttribute('aria-pressed', String(chip.dataset.genero === (ativo ?? '')));
+    }
+  }
+
+  for (const g of ['', ...generos]) {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'chip';
+    chip.dataset.genero = g;
+    chip.textContent = g || 'Todos';
+    chip.setAttribute('aria-pressed', String(g === ''));
+    chip.addEventListener('click', () => {
+      ativo = g || null;
+      desenha();
+    });
+    filtros.append(chip);
+  }
+
+  desenha();
+} catch (e) {
+  if (e.message !== 'vazio') resumo.textContent = 'não consegui carregar a lista de discos';
+  console.warn('disco do dia:', e);
+}
+</script>
+</body>
+</html>
