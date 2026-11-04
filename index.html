@@ -389,7 +389,7 @@ h2 {
 
 .pendentes .aviso { margin: 0 0 1rem; font-size: .8125rem; color: var(--dim); }
 
-/* sem nota nao tem ranking, entao nao tem posicao nem nota — so capa e nome */
+/* quem nao foi escutado nao tem ranking: sai sem posicao e sem nota */
 .pendentes .disco { grid-template-columns: 3.5rem 1fr auto; }
 
 .seta {
@@ -473,8 +473,8 @@ footer a:hover, footer a:focus-visible { color: var(--fg); }
     </p>
 
     <p>
-      Quem está na fila é disco que eu já separei mas ainda não escutei com
-      atenção suficiente pra dar nota.
+      Quem está na fila é disco que eu já separei e ainda não escutei. Entra
+      no ranking quando a escuta acontecer.
     </p>
 
     <p>As resenhas seguem lá no Twitter, por enquanto.</p>
@@ -496,7 +496,7 @@ footer a:hover, footer a:focus-visible { color: var(--fg); }
   <ol class="lista reveal" style="--d:.26s" id="lista"></ol>
 
   <section class="pendentes" id="pendentes" hidden>
-    <h2>Escutados sem nota</h2>
+    <h2>Ainda não escutados</h2>
     <p class="aviso" id="aviso-pendentes"></p>
     <ul class="lista" id="lista-pendentes"></ul>
   </section>
@@ -649,7 +649,7 @@ try {
     const pend = semNota.filter((d) => !ativo || (d.generos ?? []).includes(ativo));
     listaPendentes.replaceChildren(...pend.map((d) => linha(d, null)));
     pendentes.hidden = !pend.length;
-    avisoPendentes.textContent = `${pend.length} na fila, esperando uma escuta com atenção.`;
+    avisoPendentes.textContent = `${pend.length} na fila, esperando a vez.`;
 
     if (!ranking.length) {
       const p = document.createElement('li');
