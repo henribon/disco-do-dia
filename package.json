@@ -11,5 +11,8 @@
   },
   "dependencies": {
     "jimp": "^1.6.1"
+  },
+  "overrides": {
+    "zod": "^4.6.6"
   }
 }

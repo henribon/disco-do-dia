@@ -79,6 +79,15 @@ verdade, e não há arquivo de controle nem cache pra manter.
 > uma parede furada — e o passo é `continue-on-error`, então o dado do Notion
 > entra do mesmo jeito e o `og.jpg` anterior continua servindo.
 
+O `package.json` tem um `overrides` prendendo a `zod` em `^4.6.6`. A jimp traz
+a `zod` 3 por baixo, e aquela série tem uma falha de exaustão de memória
+([GHSA-mrhx-c7xc-m3w5](https://github.com/advisories/GHSA-mrhx-c7xc-m3w5)) que
+aparecia como 29 avisos no `npm ci` — todos a mesma causa, repetida em cada
+sub-pacote da jimp. O `npm audit fix` queria rebaixar a jimp pra 0.22, que tem
+outra API; o override resolve sem trocar de versão. Com ele o `npm audit` fica
+limpo, e o `og.jpg` sai byte a byte igual ao que saía antes — conferido por
+sha256.
+
 ### A nota
 
 É o número cru do Notion. Nota 9 pra cima acende em branco, o resto fica
