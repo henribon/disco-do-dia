@@ -1,0 +1,820 @@
+{
+  "generated_at": "2026-11-04T16:05:47.611Z",
+  "total": 69,
+  "discos": [
+    {
+      "nome": "Di Melo",
+      "artista": "Di Melo",
+      "nota": 11,
+      "generos": [
+        "Disco",
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2Uri1KkpSo6YOnjLC4ly7F",
+      "spotify_id": "2Uri1KkpSo6YOnjLC4ly7F",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0235428e70f89fc95e0906df7b",
+      "adicionado_em": "2025-09-29T13:48:45Z"
+    },
+    {
+      "nome": "Os Ticoãs",
+      "artista": "Os Ticoãs",
+      "nota": 10,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/6rd3qK09Hft7jQZoMp1VWH",
+      "spotify_id": "6rd3qK09Hft7jQZoMp1VWH",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02be2277cfc71aab7667b8c811",
+      "adicionado_em": "2025-11-10T20:42:07Z"
+    },
+    {
+      "nome": "Copacabana Sadia",
+      "artista": "Junior Mendes",
+      "nota": 10,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4bUdDoSdFhXBm5nlvWVuI4",
+      "spotify_id": "4bUdDoSdFhXBm5nlvWVuI4",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f68d4a9c47a73940651c7961",
+      "adicionado_em": "2025-10-08T18:33:28Z"
+    },
+    {
+      "nome": "Ronie & Central do Brasil",
+      "artista": "Ronie Mesquita",
+      "nota": 10,
+      "generos": [
+        "Soul",
+        "MPB",
+        "Bossa"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/0NuL5MXEYqtpyMqJzEqHgT",
+      "spotify_id": "0NuL5MXEYqtpyMqJzEqHgT",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028c30f510ad51c5287ca9eb9b",
+      "adicionado_em": "2025-10-07T12:51:20Z"
+    },
+    {
+      "nome": "The concord Jazz Heritage Series",
+      "artista": "Tania Maria",
+      "nota": 10,
+      "generos": [
+        "Latin",
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4KFx9dwUnGpuYgY3JO7gug",
+      "spotify_id": "4KFx9dwUnGpuYgY3JO7gug",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024eecdff5bdd27dd7adff105d",
+      "adicionado_em": "2025-10-03T14:16:24Z"
+    },
+    {
+      "nome": "Maestro",
+      "artista": "Moacir Santos",
+      "nota": 10,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/79mk6M2T4akxGdPwK8X4tq",
+      "spotify_id": "79mk6M2T4akxGdPwK8X4tq",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028e14486d883bffb40a8b0953",
+      "adicionado_em": "2025-10-01T14:22:18Z"
+    },
+    {
+      "nome": "Saudade",
+      "artista": "Moacir Santos",
+      "nota": 10,
+      "generos": [
+        "Soul"
+      ],
+      "url": null,
+      "spotify_id": null,
+      "capa": null,
+      "adicionado_em": "2025-09-29T13:46:10Z"
+    },
+    {
+      "nome": "Sandra de Sa",
+      "artista": "Sandra de Sa",
+      "nota": 9.5,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/7wB73SnTyYvV1PV0XNP9ol",
+      "spotify_id": "7wB73SnTyYvV1PV0XNP9ol",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0207f88758617b62b932fd2850",
+      "adicionado_em": "2025-10-09T13:22:14Z"
+    },
+    {
+      "nome": "Nightingale",
+      "artista": "Gilberto Gil",
+      "nota": 9,
+      "generos": [],
+      "url": null,
+      "spotify_id": null,
+      "capa": null,
+      "adicionado_em": "2025-11-04T13:04:18Z"
+    },
+    {
+      "nome": "As Musicas de Lupercio Guerra",
+      "artista": "Marissa Rossi",
+      "nota": 9,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/4ZSOBIduHKQLTqsmZHVxSU",
+      "spotify_id": "4ZSOBIduHKQLTqsmZHVxSU",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e022077bc0cb38cc931e7504ece",
+      "adicionado_em": "2025-09-29T13:57:10Z"
+    },
+    {
+      "nome": "Outubro",
+      "artista": "Azymuth",
+      "nota": 8.5,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/0IorUdxKqanPxpAzzavG5n",
+      "spotify_id": "0IorUdxKqanPxpAzzavG5n",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0250e1ee6348e94bff11e4bf40",
+      "adicionado_em": "2025-12-10T13:08:01Z"
+    },
+    {
+      "nome": "Toboga",
+      "artista": "Som Tres",
+      "nota": 8,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/6GH2fIj7C3Oks6ORcDAj6y",
+      "spotify_id": "6GH2fIj7C3Oks6ORcDAj6y",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f2b782cf7684df7c069fb2a8",
+      "adicionado_em": "2025-09-29T13:34:40Z"
+    },
+    {
+      "nome": "Cada um na Sua",
+      "artista": "Os Diagonais",
+      "nota": 8,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/5Qyb6850mSnxAZ99W0wmzW",
+      "spotify_id": "5Qyb6850mSnxAZ99W0wmzW",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e022d99101077d66db61d6037d3",
+      "adicionado_em": "2025-09-29T03:15:11Z"
+    },
+    {
+      "nome": "Ave sangria",
+      "artista": "Ave Sangria",
+      "nota": 7,
+      "generos": [
+        "Rock"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/1RF1bfPvdoLs20NpmmqKI3",
+      "spotify_id": "1RF1bfPvdoLs20NpmmqKI3",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f62b04957124e35da5753f5d",
+      "adicionado_em": "2025-12-05T14:32:10Z"
+    },
+    {
+      "nome": "Nos",
+      "artista": "Luiz Melodia",
+      "nota": 7,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/4mYtE1kbSHLDqqhzUjSY2b",
+      "spotify_id": "4mYtE1kbSHLDqqhzUjSY2b",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0253758146986201a3d62ba72e",
+      "adicionado_em": "2025-10-07T12:59:13Z"
+    },
+    {
+      "nome": "Nesse Inverno",
+      "artista": "Tony Bizarro",
+      "nota": 7,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/3naH687JWedSGAXGt9aOxM",
+      "spotify_id": "3naH687JWedSGAXGt9aOxM",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a796b8c3c2e6c0899ca29b84",
+      "adicionado_em": "2025-10-03T14:29:56Z"
+    },
+    {
+      "nome": "Bons Momentos",
+      "artista": "Serginho Meriti",
+      "nota": 7,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2TxB7xIWkfnOVhzutlBs4T",
+      "spotify_id": "2TxB7xIWkfnOVhzutlBs4T",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ad2f53a1807ddfad510f17fc",
+      "adicionado_em": "2025-10-03T14:18:59Z"
+    },
+    {
+      "nome": "SAMBA BLIM",
+      "artista": "TAMBA 4",
+      "nota": 7,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2N8i34T56xgmiuN3DI7f34",
+      "spotify_id": "2N8i34T56xgmiuN3DI7f34",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0262c738fbd061fb07610cc1d8",
+      "adicionado_em": "2025-10-01T14:08:06Z"
+    },
+    {
+      "nome": "Eva",
+      "artista": "Evinha",
+      "nota": 7,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2LPm1l02jbRkixf0brUFfP",
+      "spotify_id": "2LPm1l02jbRkixf0brUFfP",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02867e6deed5cca20c553e8ba1",
+      "adicionado_em": "2025-09-29T13:44:50Z"
+    },
+    {
+      "nome": "Carlos GOnzaga",
+      "artista": "Carlos Gonzaga",
+      "nota": 7,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/0A8cPlEfYCkimnaEcsotO8",
+      "spotify_id": "0A8cPlEfYCkimnaEcsotO8",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c36874edc3c7eceb27a0d0ac",
+      "adicionado_em": "2025-09-29T13:40:22Z"
+    },
+    {
+      "nome": "Brylho",
+      "artista": "Brylho",
+      "nota": 7,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/20CZdrYcOB20e4gt16OpNY",
+      "spotify_id": "20CZdrYcOB20e4gt16OpNY",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c40966679cbd96fa47e0e59c",
+      "adicionado_em": "2025-09-29T13:07:45Z"
+    },
+    {
+      "nome": "Viralata",
+      "artista": "Antonio Adolfo",
+      "nota": 6,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/0MenTNcYKcIqpXb5yUzFup",
+      "spotify_id": "0MenTNcYKcIqpXb5yUzFup",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02fdb3091f672c66bf87be189d",
+      "adicionado_em": "2025-10-13T13:49:23Z"
+    },
+    {
+      "nome": "Saci Perere",
+      "artista": "Banda Black Rio",
+      "nota": 6,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/1guzz8Hya0UxlvbJOVEQca",
+      "spotify_id": "1guzz8Hya0UxlvbJOVEQca",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b168331d4df0dae015b55664",
+      "adicionado_em": "2025-10-09T13:25:53Z"
+    },
+    {
+      "nome": "Seu Piano e seu orgão Espetalucar 2",
+      "artista": "Ed Lincon",
+      "nota": 6,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/3Zfmikj5zg9jTymlMBGqIm",
+      "spotify_id": "3Zfmikj5zg9jTymlMBGqIm",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020c366bcb95d62667611ee937",
+      "adicionado_em": "2025-10-01T14:12:37Z"
+    },
+    {
+      "nome": "Balancando com o Milton Banana Trio",
+      "artista": "Milton Banana Trio",
+      "nota": 6,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/album/2PqRXyMP2A00HpzztjWuTq",
+      "spotify_id": "2PqRXyMP2A00HpzztjWuTq",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b8441917ff49fa1b95b16fb8",
+      "adicionado_em": "2025-09-29T13:41:35Z"
+    },
+    {
+      "nome": "Doris - 1971",
+      "artista": "Doris Monteiro",
+      "nota": 6,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/2mQOXZRXYrolNcPoIf8xUx",
+      "spotify_id": "2mQOXZRXYrolNcPoIf8xUx",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02591febb3bfe60e918de75498",
+      "adicionado_em": "2025-09-29T13:33:36Z"
+    },
+    {
+      "nome": "O Bom",
+      "artista": "Eduardo Araujo",
+      "nota": 5,
+      "generos": [
+        "Jovem Guarda",
+        "Rock"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/5xDxwKl93AzTdHwWpHUzLH",
+      "spotify_id": "5xDxwKl93AzTdHwWpHUzLH",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c8d9d26d483841c8ccb4a73f",
+      "adicionado_em": "2025-09-29T13:39:15Z"
+    },
+    {
+      "nome": "A festa do Bolinha",
+      "artista": "Trio Esperanća",
+      "nota": 4,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/1BBZQy5fwPoC6Wv07YxvA8",
+      "spotify_id": "1BBZQy5fwPoC6Wv07YxvA8",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026012d7c637ee5b73377f2c67",
+      "adicionado_em": "2025-09-29T13:31:44Z"
+    }
+  ],
+  "sem_nota": [
+    {
+      "nome": "Carlos Gonzaga",
+      "artista": "Carlos Gonzaga",
+      "nota": null,
+      "generos": [
+        "Jovem Guarda"
+      ],
+      "url": "https://open.spotify.com/album/5ZRcz9JwebwvI625Y9Dj1c",
+      "spotify_id": "5ZRcz9JwebwvI625Y9Dj1c",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02612c04af32bee5a500a312c9",
+      "adicionado_em": "2026-04-17T14:48:48Z"
+    },
+    {
+      "nome": "Gilberto Gil (1968)",
+      "artista": "Gilberto Gil",
+      "nota": null,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/album/0Hre57CORsiZN5rwHunPQu",
+      "spotify_id": "0Hre57CORsiZN5rwHunPQu",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02460110be7494c3290b387e48",
+      "adicionado_em": "2026-04-17T14:48:48Z"
+    },
+    {
+      "nome": "Sandra de Sá - 1984",
+      "artista": "Sandra De Sá",
+      "nota": null,
+      "generos": [
+        "Soul",
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/album/5HELnaruoCJbfCVnYiEVB1",
+      "spotify_id": "5HELnaruoCJbfCVnYiEVB1",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022ca81720326db07a18dbd667",
+      "adicionado_em": "2026-04-17T14:48:31Z"
+    },
+    {
+      "nome": "Bebeto",
+      "artista": "Bebeto",
+      "nota": null,
+      "generos": [
+        "Samba",
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/album/1DgJ0Gh3lMyXVfpCxqQ6DR",
+      "spotify_id": "1DgJ0Gh3lMyXVfpCxqQ6DR",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b8dae0720ceda4c2f62f804a",
+      "adicionado_em": "2026-04-17T14:48:31Z"
+    },
+    {
+      "nome": "Os Tincoãs",
+      "artista": "Os Tincoãs",
+      "nota": null,
+      "generos": [
+        "MPB",
+        "Samba"
+      ],
+      "url": "https://open.spotify.com/album/66E3E9DaAxpGPE4SgrOBDX",
+      "spotify_id": "66E3E9DaAxpGPE4SgrOBDX",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02099dde456cd1d70b5c47a66e",
+      "adicionado_em": "2026-04-17T14:48:14Z"
+    },
+    {
+      "nome": "Banda Eva",
+      "artista": "Banda Eva",
+      "nota": null,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/album/4pqFPNWQ0crvTOy3DhP0Uz",
+      "spotify_id": "4pqFPNWQ0crvTOy3DhP0Uz",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cc6718e0d93950e2188300b9",
+      "adicionado_em": "2026-04-17T14:48:14Z"
+    },
+    {
+      "nome": "Saude",
+      "artista": "Rita Lee",
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/5zvIJc4CPmQhafWnvmd9UR",
+      "spotify_id": "5zvIJc4CPmQhafWnvmd9UR",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0200369fc7d9da78f863b28e6c",
+      "adicionado_em": "2025-12-16T13:42:49Z"
+    },
+    {
+      "nome": "Fullgass",
+      "artista": "Marina Lima",
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/3CgjFI4cjXwJEf7EQaXJQP",
+      "spotify_id": "3CgjFI4cjXwJEf7EQaXJQP",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020c1b5f723452b5b2b7bc4ada",
+      "adicionado_em": "2025-12-16T13:39:05Z"
+    },
+    {
+      "nome": "Flerte Fatal",
+      "artista": "Rita Lee e Roberto de Carvalho",
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/0xVySYGATqTcBROEy4jsII",
+      "spotify_id": "0xVySYGATqTcBROEy4jsII",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0294a7595bc84d1f323a7f4e2e",
+      "adicionado_em": "2025-12-15T13:53:20Z"
+    },
+    {
+      "nome": "E no entanto é preciso cantar",
+      "artista": "Carlos Lyra",
+      "nota": null,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/30hcakANWtR9xuTuCOXo75",
+      "spotify_id": "30hcakANWtR9xuTuCOXo75",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024619ad7a25efd244c3a6fbf2",
+      "adicionado_em": "2025-12-12T13:52:49Z"
+    },
+    {
+      "nome": "Rio 65 Trio",
+      "artista": "Rio 65 Trio",
+      "nota": null,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/5CCmS4SzGz2DmlEc9Xg79c",
+      "spotify_id": "5CCmS4SzGz2DmlEc9Xg79c",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b7dfe3dafbc82d1fe2eaff2c",
+      "adicionado_em": "2025-12-10T13:22:53Z"
+    },
+    {
+      "nome": "No Voo do Urubu",
+      "artista": "Arthur Verocai",
+      "nota": null,
+      "generos": [
+        "JAZZ",
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/5vxJ8I38l7EsOg6gDb1E13",
+      "spotify_id": "5vxJ8I38l7EsOg6gDb1E13",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0260968b2b8cf3df1af5ab99f4",
+      "adicionado_em": "2025-12-10T13:21:53Z"
+    },
+    {
+      "nome": "Modo Aviao",
+      "artista": "Caixa Cubo",
+      "nota": null,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2qREUFm7mJHEXF6JjXYalx",
+      "spotify_id": "2qREUFm7mJHEXF6JjXYalx",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023c8465ed0398d0008f3f5b32",
+      "adicionado_em": "2025-12-10T13:19:57Z"
+    },
+    {
+      "nome": "Meu Balanço",
+      "artista": "Walter Branco",
+      "nota": null,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/438qLiFxIdKhMT1BRLPDqN",
+      "spotify_id": "438qLiFxIdKhMT1BRLPDqN",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020773137b8f5b7b7660598f36",
+      "adicionado_em": "2025-12-10T13:15:53Z"
+    },
+    {
+      "nome": "Viagem",
+      "artista": "Oscar Milito",
+      "nota": null,
+      "generos": [
+        "JAZZ",
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2plYnfWhRnavvdVkftUwMU",
+      "spotify_id": "2plYnfWhRnavvdVkftUwMU",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020518f6062dd2396d164d0083",
+      "adicionado_em": "2025-12-10T13:12:31Z"
+    },
+    {
+      "nome": "Gravido",
+      "artista": "Gonzaguinha",
+      "nota": null,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2sTdX5IvSvf8cZLUcnAlc0",
+      "spotify_id": "2sTdX5IvSvf8cZLUcnAlc0",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f8c741087f67696c0503851c",
+      "adicionado_em": "2025-12-05T13:38:46Z"
+    },
+    {
+      "nome": "Nossa Imaginacao",
+      "artista": "Don Beto",
+      "nota": null,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/5xigVAuBgDEeKPJMdEu3n9",
+      "spotify_id": "5xigVAuBgDEeKPJMdEu3n9",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c2978ce47b44ead4a31e9cf8",
+      "adicionado_em": "2025-12-04T14:03:08Z"
+    },
+    {
+      "nome": "Bebeto",
+      "artista": "Bebeto",
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/6viHCaKXvtuXoFySXGeoTv",
+      "spotify_id": "6viHCaKXvtuXoFySXGeoTv",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02710925b03e52fec8baac15ce",
+      "adicionado_em": "2025-12-04T13:57:21Z"
+    },
+    {
+      "nome": "Eu quero botar meu bloco na rua",
+      "artista": "Sergio Sampaio",
+      "nota": null,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/221cRlERrYynaEGITG5LhE",
+      "spotify_id": "221cRlERrYynaEGITG5LhE",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ab1c51261aeb957acabe88c9",
+      "adicionado_em": "2025-11-04T00:05:12Z"
+    },
+    {
+      "nome": "WE AND THE SEA",
+      "artista": "Tamba 4",
+      "nota": null,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/0xReMZJc5fAdMxBVyjU43R",
+      "spotify_id": "0xReMZJc5fAdMxBVyjU43R",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0266a0e1473ca85ce2a352d5d5",
+      "adicionado_em": "2025-10-29T15:21:18Z"
+    },
+    {
+      "nome": "Seducao",
+      "artista": "Altay Veloso",
+      "nota": null,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4Ycg6HcuPVepBkgnNB6kmB",
+      "spotify_id": "4Ycg6HcuPVepBkgnNB6kmB",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d0e106350cc64aef50ab1aae",
+      "adicionado_em": "2025-10-22T14:48:29Z"
+    },
+    {
+      "nome": "Colo de Rio",
+      "artista": "Marcia Maria",
+      "nota": null,
+      "generos": [
+        "Soul",
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4MMDpCcngjKAZGinRwuqZe",
+      "spotify_id": "4MMDpCcngjKAZGinRwuqZe",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e134613abf6d3745d40f4be2",
+      "adicionado_em": "2025-10-22T14:19:22Z"
+    },
+    {
+      "nome": "Arrebentação",
+      "artista": "Sergio Ricardo",
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/37OrJwloaP8gZ07YHMhWc5",
+      "spotify_id": "37OrJwloaP8gZ07YHMhWc5",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0270155a756d39fab225183c85",
+      "adicionado_em": "2025-10-20T14:07:25Z"
+    },
+    {
+      "nome": "Djavan",
+      "artista": "Djavan",
+      "nota": null,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/72O5JvUfLI71iSMqaOdNAY",
+      "spotify_id": "72O5JvUfLI71iSMqaOdNAY",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02fab75b16fe482ed5a0f5110b",
+      "adicionado_em": "2025-10-20T13:27:37Z"
+    },
+    {
+      "nome": "Mais que um Adeus",
+      "artista": "Emilio Santiago",
+      "nota": null,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/3ZiJqSVnlkiWIHcAJy4yvq",
+      "spotify_id": "3ZiJqSVnlkiWIHcAJy4yvq",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0239cf7b7d922ddf5537aec209",
+      "adicionado_em": "2025-10-09T13:30:32Z"
+    },
+    {
+      "nome": "Origens",
+      "artista": "FIlo Machado",
+      "nota": null,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/5hMcqjEYG4kJX3oYL1nxKr",
+      "spotify_id": "5hMcqjEYG4kJX3oYL1nxKr",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029933f00eb1af1bcae90c0ebe",
+      "adicionado_em": "2025-10-09T13:17:44Z"
+    },
+    {
+      "nome": "O som do Copa 7",
+      "artista": "Copa 7",
+      "nota": null,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/384yOFgb9U8h0mY28fcEpU",
+      "spotify_id": "384yOFgb9U8h0mY28fcEpU",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e026db8da9b29cc25292291e7c4",
+      "adicionado_em": "2025-10-08T18:59:28Z"
+    },
+    {
+      "nome": "Vale Tudo",
+      "artista": "Sandra de Sá",
+      "nota": null,
+      "generos": [
+        "Disco"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2tHPCtLKccEl3VYmQxq6Cp",
+      "spotify_id": "2tHPCtLKccEl3VYmQxq6Cp",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027b569f31bd96855d656304e6",
+      "adicionado_em": "2025-10-08T17:44:05Z"
+    },
+    {
+      "nome": "a virgem de saint tropez",
+      "artista": null,
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/2U0mMEw5pA5N0b2SJDVKGO",
+      "spotify_id": "2U0mMEw5pA5N0b2SJDVKGO",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e021b3899f12e1bcdd12a77bca5",
+      "adicionado_em": "2025-10-07T20:38:24Z"
+    },
+    {
+      "nome": "New Morning",
+      "artista": "Sabrina Malheiros",
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/5cL70QI4BV2Z1LxUTOhA6b",
+      "spotify_id": "5cL70QI4BV2Z1LxUTOhA6b",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0210c2b0be8a5f63fee5f4ece4",
+      "adicionado_em": "2025-10-07T13:09:25Z"
+    },
+    {
+      "nome": "Jorge Autuoria Trio, Vol 2",
+      "artista": "Jorge Autuori",
+      "nota": null,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/0AekpYWGemq5Hwe6jDJeV1",
+      "spotify_id": "0AekpYWGemq5Hwe6jDJeV1",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02270f9cb6f83ded28a860ef3d",
+      "adicionado_em": "2025-10-07T12:47:38Z"
+    },
+    {
+      "nome": "Venham matar Saudades",
+      "artista": "Carlos Dafe",
+      "nota": null,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4H7JboApFdUqORKVEvGk0S",
+      "spotify_id": "4H7JboApFdUqORKVEvGk0S",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023fe71c080f929fa95d79727d",
+      "adicionado_em": "2025-10-03T19:17:39Z"
+    },
+    {
+      "nome": "Tierra Mia",
+      "artista": "Guillermo Portabales",
+      "nota": null,
+      "generos": [
+        "Latin"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4Y1zangoXTk4it92oalcJw",
+      "spotify_id": "4Y1zangoXTk4it92oalcJw",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02d05c7ba54976544694f77dc6",
+      "adicionado_em": "2025-10-02T19:47:41Z"
+    },
+    {
+      "nome": "De profesion sonero",
+      "artista": "Ignacio CArrillo MAzacote",
+      "nota": null,
+      "generos": [
+        "Latin"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/3IMl9ffRBta01xDwFvM7G6",
+      "spotify_id": "3IMl9ffRBta01xDwFvM7G6",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0216152928be60820f5cd7020e",
+      "adicionado_em": "2025-10-02T19:43:36Z"
+    },
+    {
+      "nome": "Fragile BEuaty",
+      "artista": "Huong Thanh",
+      "nota": null,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/21H0V5Byl66C6n6y4kaXYW",
+      "spotify_id": "21H0V5Byl66C6n6y4kaXYW",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02e1459c37abf9999d8cac7a50",
+      "adicionado_em": "2025-10-02T19:13:05Z"
+    },
+    {
+      "nome": "Dragonfly",
+      "artista": "Huong Thanh",
+      "nota": null,
+      "generos": [
+        "R&B"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/74byuumQiaciLl60cT0YDL",
+      "spotify_id": "74byuumQiaciLl60cT0YDL",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02abe74107c90b1c63d4dbf738",
+      "adicionado_em": "2025-10-02T19:09:05Z"
+    },
+    {
+      "nome": "Chico Buarque de Hollanda",
+      "artista": "Chico Buarque",
+      "nota": null,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4ejwSOS740Jj4z3h4RyxJo",
+      "spotify_id": "4ejwSOS740Jj4z3h4RyxJo",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ace84cf927e76b09499408d8",
+      "adicionado_em": "2025-10-01T14:39:03Z"
+    },
+    {
+      "nome": "Brazilian Dorian Dream",
+      "artista": "Manfredo Fest",
+      "nota": null,
+      "generos": [
+        "JAZZ"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/1b8rmLql6w2oq4zgvdNMSC",
+      "spotify_id": "1b8rmLql6w2oq4zgvdNMSC",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02333b06c422854984ab408f4a",
+      "adicionado_em": "2025-10-01T14:27:49Z"
+    },
+    {
+      "nome": "KISS 6",
+      "artista": "EJ JONES",
+      "nota": null,
+      "generos": [
+        "R&B",
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/album/4cS6D5jhPr6j7JLFCvUTha",
+      "spotify_id": "4cS6D5jhPr6j7JLFCvUTha",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0280f509b27e6212b74720cfc6",
+      "adicionado_em": "2025-09-30T01:32:50Z"
+    },
+    {
+      "nome": "Os Originais do Samba",
+      "artista": "Os Originais do Samba",
+      "nota": null,
+      "generos": [
+        "Samba"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2hS53OZv0ZUhc9wyE1Ny7o",
+      "spotify_id": "2hS53OZv0ZUhc9wyE1Ny7o",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02a49a0466e55f04498f6986a8",
+      "adicionado_em": "2025-09-29T13:53:22Z"
+    },
+    {
+      "nome": "Promisse",
+      "artista": "Sade",
+      "nota": null,
+      "generos": [
+        "Soul"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4wCvCNsMJJvyeX5mGO40ae",
+      "spotify_id": "4wCvCNsMJJvyeX5mGO40ae",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02584302fee10c0d0a12c40c97",
+      "adicionado_em": "2025-09-29T03:23:17Z"
+    }
+  ]
+}
