@@ -39,6 +39,17 @@ quando entraram.
 > às vezes não são. Pra juntar, é só deixar o mesmo link nas duas linhas do
 > Notion.
 
+### Os links
+
+O Notion guarda o link como ele saiu do "copiar link" da Spotify, com o
+`?si=` grudado no fim — um token de rastreio da sessão de quem copiou. O
+script corta a query antes de qualquer outra coisa, então o que vai pro ar é
+só `open.spotify.com/.../album/<id>`.
+
+Isso não mexe na deduplicação: o id do álbum é extraído por regex que para no
+`?`, então link sujo e link limpo sempre casaram. É só pra não publicar
+rastreio alheio.
+
 ### As capas
 
 Vêm do oEmbed público da Spotify (`open.spotify.com/oembed`), que não pede
@@ -90,8 +101,10 @@ então a página busca o JSON por caminho relativo.
 
 ### 4. Linka no bonbap.com.br
 
-No `index.html` da home, a porta do Spotify vira um submenu com as duas páginas
-de música — mesmo padrão do `Loja e Conteúdos`:
+Já está feito: a home tem a porta **Música** abrindo as duas páginas, no mesmo
+padrão do `Loja e Conteúdos`. Fica registrado aqui porque o `index.html` da
+home mora em outro repo (`henribon.github.io`) e isto aqui é o único lugar que
+conta a história inteira.
 
 ```html
 <button class="door door--toggle reveal" style="--d:.36s" type="button"
@@ -112,8 +125,10 @@ de música — mesmo padrão do `Loja e Conteúdos`:
 </div>
 ```
 
-O script da home precisa de um ajuste junto: ele pega `querySelector('[data-toggle]')`,
-no singular, e só liga a primeira porta. Com duas, tem que percorrer todas.
+O script da home precisou de um ajuste junto: ele pegava
+`querySelector('[data-toggle]')`, no singular, e só ligava a primeira porta —
+com duas, a `Loja e Conteúdos` pararia de abrir. Agora percorre todas com
+`querySelectorAll`. Se algum dia entrar uma terceira porta dessas, já funciona.
 
 ## Mexer na página sem token
 

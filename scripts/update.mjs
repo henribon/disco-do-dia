@@ -76,7 +76,7 @@ async function buscaNotion() {
       Nome: (prop.Nome?.title ?? []).map((t) => t.plain_text).join('').trim() || null,
       Artista: (prop.Artista?.rich_text ?? []).map((t) => t.plain_text).join('').trim() || null,
       Nota: prop.Nota?.number ?? null,
-      Link: prop.Link?.url ?? null,
+      Link: limpaLink(prop.Link?.url),
       Genero: (prop.Genero?.multi_select ?? []).map((o) => o.name),
       'Criado em': p.created_time ?? null,
     };
@@ -84,6 +84,22 @@ async function buscaNotion() {
 }
 
 /* ------------------------------------------------------------- normalizacao */
+
+/**
+ * O link sem o ?si= que a Spotify gruda no "copiar link": e um token de
+ * rastreio, nao faz falta pra abrir o album e e a URL que vai pro ar.
+ * Link de outro lugar passa intacto; link torto passa intacto tambem.
+ */
+function limpaLink(link) {
+  if (!link) return null;
+
+  try {
+    const u = new URL(link);
+    return u.hostname.endsWith('spotify.com') ? u.origin + u.pathname : link;
+  } catch {
+    return link;
+  }
+}
 
 /** O id do album no link da Spotify. E a unica chave confiavel de duplicata. */
 function albumId(link) {
