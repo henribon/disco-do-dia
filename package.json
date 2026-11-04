@@ -2,8 +2,14 @@
   "name": "disco-do-dia",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "update": "node scripts/update.mjs"
+    "update": "node scripts/update.mjs",
+    "og": "node scripts/og.mjs"
+  },
+  "dependencies": {
+    "jimp": "^1.6.1"
   }
 }
