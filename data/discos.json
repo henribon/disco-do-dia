@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T18:36:40.522Z",
-  "total": 66,
+  "generated_at": "2026-11-04T18:45:16.832Z",
+  "total": 69,
   "discos": [
     {
       "nome": "Di Melo",
@@ -101,6 +101,31 @@
       "adicionado_em": "2025-10-09T13:22:00.000Z"
     },
     {
+      "nome": "Paulinho Tapajos",
+      "artista": "Paulinho Tapajos",
+      "nota": 9,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/7C6iwxLLuEoUaRiqvpPRXP",
+      "spotify_id": "7C6iwxLLuEoUaRiqvpPRXP",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02db81b5fa88e5c3b5a9ebfd4f",
+      "adicionado_em": "2026-11-04T18:39:00.000Z"
+    },
+    {
+      "nome": "Arepa 3000",
+      "artista": "Los Amigos Invisibles",
+      "nota": 9,
+      "generos": [
+        "Disco",
+        "Fusion Jazz"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/4VRNs3TfQWZjRXiv378FNN",
+      "spotify_id": "4VRNs3TfQWZjRXiv378FNN",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0240994b043e3212f311097ae3",
+      "adicionado_em": "2026-11-04T18:24:00.000Z"
+    },
+    {
       "nome": "Nightingale",
       "artista": "Gilberto Gil",
       "nota": 9,
@@ -145,6 +170,18 @@
       "adicionado_em": "2025-12-10T13:08:00.000Z"
     },
     {
+      "nome": "2 é demais!",
+      "artista": "Benito di Paula",
+      "nota": 8,
+      "generos": [
+        "MPB"
+      ],
+      "url": "https://open.spotify.com/intl-pt/album/2GkxbyQBBqvUmlv5BDojUI",
+      "spotify_id": "2GkxbyQBBqvUmlv5BDojUI",
+      "capa": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f4aedbd66b34475288d5a80b",
+      "adicionado_em": "2026-11-04T18:41:00.000Z"
+    },
+    {
       "nome": "Mais que um Adeus",
       "artista": "Emilio Santiago",
       "nota": 8,
@@ -179,6 +216,16 @@
       "spotify_id": "5Qyb6850mSnxAZ99W0wmzW",
       "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e022d99101077d66db61d6037d3",
       "adicionado_em": "2025-09-29T03:15:00.000Z"
+    },
+    {
+      "nome": "Flerte Fatal",
+      "artista": "Rita Lee e Roberto de Carvalho",
+      "nota": 7,
+      "generos": [],
+      "url": "https://open.spotify.com/intl-pt/album/0xVySYGATqTcBROEy4jsII",
+      "spotify_id": "0xVySYGATqTcBROEy4jsII",
+      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0294a7595bc84d1f323a7f4e2e",
+      "adicionado_em": "2025-12-15T13:53:00.000Z"
     },
     {
       "nome": "Ave sangria",
@@ -450,16 +497,6 @@
       "spotify_id": "3CgjFI4cjXwJEf7EQaXJQP",
       "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020c1b5f723452b5b2b7bc4ada",
       "adicionado_em": "2025-12-16T13:39:00.000Z"
-    },
-    {
-      "nome": "Flerte Fatal",
-      "artista": "Rita Lee e Roberto de Carvalho",
-      "nota": null,
-      "generos": [],
-      "url": "https://open.spotify.com/intl-pt/album/0xVySYGATqTcBROEy4jsII",
-      "spotify_id": "0xVySYGATqTcBROEy4jsII",
-      "capa": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0294a7595bc84d1f323a7f4e2e",
-      "adicionado_em": "2025-12-15T13:53:00.000Z"
     },
     {
       "nome": "E no entanto é preciso cantar",
