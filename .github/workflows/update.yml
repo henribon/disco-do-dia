@@ -2,9 +2,10 @@ name: Atualiza os discos do Notion
 
 on:
   schedule:
-    # Todo dia, 09:00 UTC (6h em Brasilia). A base ganha um disco por dia,
-    # entao diario e o ritmo certo.
-    - cron: '0 9 * * *'
+    # Toda segunda, 09:00 UTC (6h em Brasilia). A base anda devagar e a
+    # pagina nao muda entre uma escuta e outra, entao semanal basta.
+    # Pra ver uma mudanca do Notion no ar agora, e so usar o Run workflow.
+    - cron: '0 9 * * 1'
   workflow_dispatch:
 
 # Um job por vez: duas execucoes em paralelo dariam conflito no push.
@@ -24,17 +25,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: npm
+
+      - name: Instala o que a imagem de preview precisa
+        run: npm ci
 
       - name: Puxa do Notion e busca as capas
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: node scripts/update.mjs
 
+      # A parede de capas e enfeite: se a Spotify estiver fora do ar, o dado
+      # do Notion ainda tem que entrar. Por isso o passo pode falhar sozinho,
+      # e o og.jpg anterior continua servindo.
+      - name: Remonta a imagem de preview
+        continue-on-error: true
+        run: node scripts/og.mjs
+
       - name: Commita se mudou
         run: |
           git config user.name "notion-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ og.jpg
           git diff --staged --quiet && echo "sem mudanca" && exit 0
           git commit -m "chore: atualiza os discos"
           git push

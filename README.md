@@ -8,8 +8,9 @@ Pra publicar em <https://bonbap.com.br/disco-do-dia/>.
 
 ## Como funciona
 
-Um GitHub Action roda toda madrugada, lê a base do Notion, busca as capas e
-grava `data/discos.json`. O Pages serve o arquivo e a página monta a lista.
+Um GitHub Action roda toda segunda de manhã, lê a base do Notion, busca as
+capas, grava `data/discos.json` e remonta o `og.jpg`. O Pages serve os
+arquivos e a página monta a lista.
 
 ```
 index.html          # a página (CSS e JS embutidos)
@@ -54,11 +55,29 @@ rastreio alheio.
 
 Vêm do oEmbed público da Spotify (`open.spotify.com/oembed`), que não pede
 autenticação — por isso aqui não tem secret de Spotify nenhum. As capas que já
-estão no JSON anterior são reaproveitadas, então a execução diária só busca
+estão no JSON anterior são reaproveitadas, então a execução semanal só busca
 capa de disco novo.
 
 Disco sem `Link` no Notion fica sem capa e sem clique: aparece com um ♪ no
 lugar. Hoje são dois, `Saudade` e `Nightingale` — é só pôr o link na base.
+
+### A imagem de preview
+
+Quando o link é colado no WhatsApp, no Twitter ou no Slack, o card mostra uma
+parede com as capas — 60 delas, as com nota primeiro, numa grade de 10 por 6
+cortada no meio pra primeira e a última fileira sangrarem pra fora do quadro.
+
+Quem monta é o `scripts/og.mjs`, com a [jimp](https://github.com/jimp-dev/jimp)
+— JS puro, sem binário nativo pra compilar no runner. Ele lê as capas que já
+estão no `discos.json`, então não fala com o Notion nem com a API da Spotify.
+
+A saída é determinística: as mesmas capas na mesma ordem dão bytes iguais.
+Por isso o `git add` do workflow só enxerga mudança quando a parede mudou de
+verdade, e não há arquivo de controle nem cache pra manter.
+
+> Se muitas capas falharem no download, o script sai com erro em vez de gravar
+> uma parede furada — e o passo é `continue-on-error`, então o dado do Notion
+> entra do mesmo jeito e o `og.jpg` anterior continua servindo.
 
 ### A nota
 
@@ -93,7 +112,7 @@ variável de ambiente `NOTION_DATABASE_ID`.
 
 - **Settings → Pages** → Source: *Deploy from a branch* → `main` / `/ (root)`.
 - **Actions → Atualiza os discos do Notion → Run workflow**, pra não esperar
-  até de madrugada.
+  até segunda.
 
 Como o CNAME `bonbap.com.br` está no repo de user site (`henribon.github.io`),
 este project site é servido em `bonbap.com.br/disco-do-dia/` — mesmo domínio,
